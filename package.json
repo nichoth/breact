@@ -1,13 +1,12 @@
 {
   "scripts": {
-    "build": "browserify index.js -o public/bundle.js -t [ babelify --presets [ @babel/preset-react ] ] -p esmify",
+    "build": "browserify src/index.js -o public/bundle.js -t [ babelify --presets [ @babel/preset-react ] ] -p esmify",
     "serve": "ecstatic public"
   },
   "dependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
-    "babel-preset-react": "^6.24.1",
     "babelify": "^10.0.0",
     "browserify": "^17.0.0",
     "ecstatic": "^4.1.4",
